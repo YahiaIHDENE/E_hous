@@ -1,4 +1,4 @@
- ## Projet Integratif ***E-hous***
+ ## Projet Integratif ***E-house***
 ---
 
 ### Membres de l'equipe : 
