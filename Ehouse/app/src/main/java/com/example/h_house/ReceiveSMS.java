@@ -15,24 +15,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
-
 
 public class ReceiveSMS extends BroadcastReceiver {
-    public static String valeurtemperature="0";
-    public static int valtemp;
     private static MessageListener mListener;
 
-    public static String getValeurtemperature() {
-        return valeurtemperature;
-    }
-
-    public static void setValeurtemperature(String valeurtemperature) {
-        ReceiveSMS.valeurtemperature = valeurtemperature;
-    }
-
-    @Override
+      @Override
 
     public void onReceive(Context context, Intent intent) {
         try {
@@ -41,23 +28,10 @@ public class ReceiveSMS extends BroadcastReceiver {
             for (int i = 0; i < pdus.length; i++) {
                 SmsMessage smsMessage = SmsMessage.createFromPdu((byte[]) pdus[i]);
                 mListener.messageReceived(smsMessage.getDisplayOriginatingAddress(), smsMessage.getMessageBody());
-                valeurtemperature=smsMessage.getMessageBody();
-                 valtemp = Integer.parseInt(valeurtemperature);
 
-                if(valtemp>30)
-                {
-
-                   // Toast.makeText(context, "Alerte Température!!!! " +valtemp+ " °C",  Toast.LENGTH_LONG).show();
-
-
-                }
             }
-
         }
-        catch (Exception e)
-        {
-
-        }
+        catch (Exception e) { }
     }
 
     public static void bindListener(MessageListener listener){

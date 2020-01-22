@@ -16,7 +16,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".temperature"></activity>
+        <activity android:name=".VentilationOnClick"></activity>
+        <activity android:name=".FumeeOnClick" />
+        <activity android:name=".BruitOnClick" />
+        <activity android:name=".PorteOnClick" />
+        <activity android:name=".temperature" />
         <activity android:name=".LedOnClick" />
         <activity android:name=".MenuOnClick" />
         <activity android:name=".MainActivity">
@@ -26,9 +30,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <receiver android:name=".ReceiveSMS" android:enabled="true" android:exported="true">
             <intent-filter>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
                 <action android:name="android.provider.Telephony.SMS_SEND"/>
                 <action android:name="android.provider.Telephony.READ_PHONE_STATE"/>
                 <action android:name="android.provider.Telephony.READ_SMS"/>

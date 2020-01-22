@@ -1,19 +1,28 @@
 package com.example.h_house;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
+import android.app.Notification;
 import android.content.Intent;
+import android.media.RingtoneManager;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.example.h_house.notification.CHANNEL_1_ID;
+
 public class LedOnClick extends AppCompatActivity {
 
     TextView res;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        SmsManager.getDefault().sendTextMessage("+33766189022",null,"\n{led}",null,null);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_led_on_click);
 
@@ -49,8 +58,8 @@ public class LedOnClick extends AppCompatActivity {
         ONsallon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SmsManager.getDefault().sendTextMessage("+33766189022",null,"\n{led-on-sallon}",null,null);
-                res.setText("led-on-sallon");
+                SmsManager.getDefault().sendTextMessage("+33766189022",null,"\n{led-on-salon}",null,null);
+                res.setText("led-on-salon");
             }
         });
 
@@ -58,8 +67,8 @@ public class LedOnClick extends AppCompatActivity {
         OFFsallon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SmsManager.getDefault().sendTextMessage("+33766189022",null,"\n{led-off-sallon}",null,null);
-                res.setText("led-off-sallon");
+                SmsManager.getDefault().sendTextMessage("+33766189022",null,"\n{led-off-salon}",null,null);
+                res.setText("led-off-salon");
             }
         });
 
@@ -84,4 +93,6 @@ public class LedOnClick extends AppCompatActivity {
 
 
     }
+
+
 }

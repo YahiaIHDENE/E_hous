@@ -10,15 +10,13 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
 public class notification extends Application {
-    public static final String CHANNEL_1_ID = "channel1";
+    public static final String CHANNEL_1_ID = "Température";
+    public static final String CHANNEL_2_ID = "Bruit";
 
     @Override
     public void onCreate() {
         super.onCreate();
-
         createNotificationChannels();
-        //marche();
-
     }
 
     public void createNotificationChannels() {
@@ -28,34 +26,9 @@ public class notification extends Application {
                     "Channel 1",
                     NotificationManager.IMPORTANCE_HIGH
             );
-            channel1.setDescription("This is Channel 1");
-
+            channel1.setDescription(" Channel température");
             NotificationManager manager = getSystemService(NotificationManager.class);
             manager.createNotificationChannel(channel1);
         }
-
     }
-  /*
-    public  void marche()
-    {
-        ReceiveSMS receiveSMS = new ReceiveSMS();
-
-
-
-            NotificationManagerCompat notificationManager;
-
-            notificationManager = NotificationManagerCompat.from(this);
-
-            Notification notification = new NotificationCompat.Builder(this, CHANNEL_1_ID)
-                    .setSmallIcon(R.drawable.ic_message)
-                    .setContentTitle("Alerte Température 2")
-                    .setContentText("Temperature "+receiveSMS.valtemp+"°C")
-                    .setPriority(NotificationCompat.PRIORITY_HIGH)
-                    .setCategory(NotificationCompat.CATEGORY_MESSAGE)
-                    .build();
-
-            notificationManager.notify(1, notification);
-
-    }
-*/
 }

@@ -22,7 +22,7 @@
         android:id="@+id/textView2"
         android:layout_width="157dp"
         android:layout_height="28dp"
-        android:text="menue principal:"
+        android:text="menu principal:"
         android:textSize="21dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.464" />
 
     <Button
-        android:id="@+id/bruit"
+        android:id="@+id/Bruit"
         android:layout_width="197dp"
         android:layout_height="36dp"
         android:text="detection bruit"
@@ -85,5 +85,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.763" />
+
+    <Button
+        android:id="@+id/Ventilation"
+        android:layout_width="197dp"
+        android:layout_height="36dp"
+        android:text="Activer la ventilation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,5 +30,40 @@ public class MenuOnClick extends AppCompatActivity {
                 startActivity(new Intent(MenuOnClick.this, temperature.class));
             }
         });
+
+        Button Bruit = (Button) findViewById(R.id.Bruit);
+        Bruit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuOnClick.this, BruitOnClick.class));
+            }
+        });
+
+        Button Garage = (Button) findViewById(R.id.Garage);
+        Garage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuOnClick.this, PorteOnClick.class));
+            }
+        });
+
+        Button fumee = (Button) findViewById(R.id.fumée);
+        fumee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuOnClick.this, FumeeOnClick.class));
+            }
+        });
+
+        Button ventilation = (Button) findViewById(R.id.Ventilation);
+        ventilation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuOnClick.this, VentilationOnClick.class));
+            }
+        });
+
+
+
     }
 }
