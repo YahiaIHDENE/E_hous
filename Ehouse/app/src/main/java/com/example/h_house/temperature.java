@@ -62,7 +62,7 @@ public class temperature extends AppCompatActivity implements MessageListener {
 
 
 
-     SmsManager.getDefault().sendTextMessage("+33766189022",null,"\n{temperature}",null,null);
+     SmsManager.getDefault().sendTextMessage("+33651267665",null,"\n{temperature}",null,null);
 
 
     }
@@ -71,7 +71,7 @@ public class temperature extends AppCompatActivity implements MessageListener {
 
 
          //Toast.makeText(this, "New Message Received: " + message, Toast.LENGTH_SHORT).show();
-            if(num.equals("+33766189022")){
+            if(num.equals("+33651267665")){
                 String type;
                 String valeur;
                 String etat;
