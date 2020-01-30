@@ -1,16 +1,15 @@
  ## Projet Integratif ***E-house***
 ---
 
-### Membres de l'equipe :\n 
+### Membres de l'equipe : 
 
-| Nom           |     Prenom      |  Formation |\n
-| :----------- :|: -------------: | :--------: |\n
-| IHDENE        |        Yahia    |      I4    |\n
-| AIT HAMOUDA   |         Souad   |      I4    |\n
-| BENNOUNA      | Oumaima         |      CIMES |\n
-| KHERJEMIL     |         Anis    |     SIR    |\n
-| AIT HAMOUDA   |   Abdelghani    |     SIR    |\n
-| DJEDJIG	|    Abdelhakim   |      I4    |\n
-| DHIFI		|         Issa    |      I4    |\n
+
+ IHDENE         Yahia         I4    
+ AIT HAMOUDA    Souad         I4    
+ BENNOUNA       Oumaima       CIMES 
+ KHERJEMIL      Anis          SIR    
+ AIT HAMOUDA    Abdelghani    SIR    
+ DJEDJIG	    Abdelhakim    I4    
+ DHIFI		    Issa          I4    
 
 
